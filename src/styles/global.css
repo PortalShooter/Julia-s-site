@@ -27,6 +27,26 @@ h1,h2,h3 {
   margin: 0;
 }
 
+p {
+  font-family: 'Roboto';
+  margin: 0;
+  font-size: 11px;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 680px) {
+  p {
+    font-size: 13px;
+  }
+}
 
 @media screen and (min-width: 1440px) {
   section {
