@@ -1,5 +1,5 @@
 .about-me {
-  margin: 66px 0;
+  margin: 29px 0;
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -21,13 +21,18 @@
     background: #fff;
     outline: 2px solid #000;
 
-    & p:not(:last-child) {
+    & p:not(:last-child),
+    & ul {
       margin-bottom: 19px;
     }
-    & p {
+    & p,
+    & ul {
       line-height: 1.6em;
       letter-spacing: 0.05em;
     }
+  }
+  &__title-list {
+    margin-bottom: 0 !important;
   }
   
   li {
@@ -62,7 +67,8 @@
         line-height: 1.6em;
         letter-spacing: 0.15em;
       }
-      & p:not(:last-child) {
+      & p:not(:last-child),
+      ul {
         margin-bottom: 22px;
       }
 
