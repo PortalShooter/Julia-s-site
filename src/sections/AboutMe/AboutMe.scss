@@ -3,12 +3,13 @@
   display: flex;
   justify-content: flex-end;
   position: relative;
+  max-width: 1440px;
 
   &__my-photo {
     position: absolute;
     left: 0;
     object-fit: cover;
-    width: 50%;
+    width: 59%;
   }
 
   &__card {
@@ -16,7 +17,7 @@
     right: 0;
     z-index: 2;
     width: 56.7%;
-    padding: 15px 10px 5px 11px;
+    padding: 15px 10px 10px 11px;
     background: #fff;
     outline: 2px solid #000;
 
@@ -47,36 +48,59 @@
   }
 
   @media screen and (min-width: 680px) {
-    margin: 62px 0;
+    margin: 64px 0;
     &__my-photo {
-      // object-fit: contain;
-      // left: -200px;
+      width: calc(121px + 45%);
+      // object-position: center;
     }
     &__card {
-      width: 391px;
-      padding: 11px 37px 37px;
-      border: 2px solid #000;
+      width: calc(80px + 40.5%);
+      padding: 1.4% 37px 37px;
+      outline: 4px solid #000;
+
+      & p {
+        line-height: 1.6em;
+        letter-spacing: 0.15em;
+      }
+      & p:not(:last-child) {
+        margin-bottom: 22px;
+      }
+
+      li {
+        line-height: 1.6em;
+      }
     }
     &__right-photo {
-      width: 45px;
+      width: 5.8%;
     }
     &__title {
       font-size: 20px;
-      margin-bottom: 8px;
+      margin-bottom: 3%;
     }
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
+    margin: 60px auto;
     &__card {
       width: 651px;
-      width: 651px;
       padding: 33px 48px 53px 49px;
+
+      p {
+        font-size: 20px;
+      }
+      & p:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+    &__my-photo {
+      width: calc(113px + 41%);
     }
     &__right-photo {
-      width: 94px;
+      width: 87px;
     }
     &__title {
       font-size: 40px;
+      margin-bottom: 31px;
     }
   }
 }

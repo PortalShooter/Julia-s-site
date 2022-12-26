@@ -6,8 +6,10 @@ const Portfolio = () => {
     <div
       className={'portfolio'}
     >
-      <h2>Мои работы</h2>
-      <span>Кутернега Юлии</span>
+      <h2 className={'portfolio__title'}>Мои работы</h2>
+      <div className={'portfolio__cards'}>
+        12312312
+      </div>
     </div>
   )
 }

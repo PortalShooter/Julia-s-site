@@ -7,7 +7,7 @@ function App() {
     <>
       <HeroSection />
       <AboutMe />
-      {/* <Portfolio /> */}
+      <Portfolio />
     </>
   );
 }
