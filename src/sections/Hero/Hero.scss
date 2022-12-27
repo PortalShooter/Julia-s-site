@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 44px;
 
   border-bottom: 3px solid #000;
 
@@ -21,7 +21,7 @@
   }
 
   &__title {
-    margin-bottom: 17px;
+    margin-bottom: 11px;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 0.093em;
@@ -49,11 +49,11 @@
 
   @media screen and (min-width: 680px) {
     height: 775px;
-    padding-top: 93px;
+    padding-top: 133px;
     border-bottom: 5px solid #000;
 
     &__title {
-      margin-bottom: 22px;
+      margin-bottom: 16px;
       font-size: 48px;
 
     }
@@ -65,7 +65,7 @@
 
   @media screen and (min-width: 1280px) {
     height: 1024px;
-    padding-top: 135px;
+    padding-top: 180px;
     border-bottom: 7px solid #000;
     
     &__img {

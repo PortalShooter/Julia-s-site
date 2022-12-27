@@ -1,5 +1,5 @@
 .portfolio {
-	padding: 12px 0;
+	padding: 12px 0 20px;
 	
 	&__title {
 		padding-left: 29px;
@@ -14,6 +14,9 @@
 		padding: 36px 29px 35px;
 		display: grid;
 		grid-row-gap: 30px;
+		justify-content: center;
+		grid-column-gap: 40px;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
 
 		&::after,
 		&::before {
@@ -34,15 +37,28 @@
 	}
 
 	@media screen and (min-width: 680px) {
+		padding-bottom: 30px;
 		&__title {
+			padding-left: 69px;
+			margin-bottom: 18px;
+
 			font-size: 32px;
 		}
 
 		&__cards {
+			padding-top: 55px;
+			padding-bottom: 53px;
 			justify-content: center;
 			margin: 0 auto;
 			grid-column-gap: 58px;
 			grid-template-columns: repeat(auto-fit, minmax(196px, 296px));
+			grid-row-gap: 50px;
+
+			&::after,
+			&::before {
+				width: 415px;
+				height: 10px;
+			}
 		}
 	}
 

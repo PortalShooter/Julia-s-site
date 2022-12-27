@@ -53,18 +53,18 @@
   }
 
   @media screen and (min-width: 680px) {
-    margin: 64px 0;
+    margin: 45px 0 40px;
     &__my-photo {
       width: calc(121px + 45%);
-      // object-position: center;
     }
     &__card {
       width: calc(80px + 40.5%);
-      padding: 1.4% 37px 37px;
+      padding: 1.4% 37px 36px;
       outline: 4px solid #000;
 
-      & p {
-        line-height: 1.6em;
+      & p,
+      & ul {
+        line-height: 1.61em;
         letter-spacing: 0.15em;
       }
       & p:not(:last-child),
@@ -91,7 +91,7 @@
       width: 651px;
       padding: 33px 48px 53px 49px;
 
-      p {
+      p, ul {
         font-size: 20px;
       }
       & p:not(:last-child) {

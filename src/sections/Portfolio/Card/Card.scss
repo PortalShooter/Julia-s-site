@@ -1,9 +1,10 @@
 .card {
     width: 100%;
-    padding: 9px 9px 10px;
+    // max-width: 300px;
+    padding: 9px 9px 8px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 
     border: 1px solid #000;
 
@@ -11,7 +12,7 @@
 
     &__title {
       position: relative;
-      width: 230px;
+      width: 80%;
       display: inline;
       margin: 0 auto 10px;
       letter-spacing: 0.25em;
@@ -32,14 +33,26 @@
 
     &__img {
       height: 82px;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    &__description {
+      letter-spacing: 0.25em;
+      line-height: 1.65em;
     }
 
     @media screen and (min-width: 680px) {
-        padding: 11px 13px 19px;
+        padding: 11px 8px 10px;
+        border-width: 2px;
 
         &__title {
-            font-size: 14px;
+          width: 100%;
+          font-size: 14px;
+        }
+
+        &__img {
+          height: 90px;
         }
       }
     
