@@ -20,10 +20,6 @@ const Portfolio = () => {
       .catch(console.error);
   }, []);
 
-  useEffect(() => {
-    console.log(allPostsData);
-  }, [allPostsData])
-
   return (
     <section
       className={'portfolio'}
