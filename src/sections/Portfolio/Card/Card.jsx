@@ -12,7 +12,10 @@ const Card = ({data}) => {
       target={'_blank'} rel="noreferrer"
     >
       <h3 className={'card__title'}><span>{name}</span></h3>
-      <img className={'card__img'} src={urlFor(img)} alt="" />
+      <div className={'card__img-wrapper'}>
+        <img className={'card__img'} src={urlFor(img)} alt="" />
+      </div>
+      
       <p className={'card__description'}>{description}</p>
       <span className={'card__link'}>Перейти к статье ...</span>
     </a>

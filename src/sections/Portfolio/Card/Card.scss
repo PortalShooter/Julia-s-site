@@ -1,87 +1,94 @@
 .card {
-    width: 100%;
-    padding: 9px 9px 8px;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  padding: 9px 9px 8px;
+  display: flex;
+  flex-direction: column;
 
-    border: 1px solid #000;
+  border: 1px solid #000;
 
-    box-shadow: 20px 20px 20px 0px #00000038;
+  box-shadow: 20px 20px 20px 0px #00000038;
+
+  &__title {
+    position: relative;
+    width: 80%;
+    display: inline;
+    margin: 0 auto 10px;
+    letter-spacing: 0.25em;
+
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+
+    span {
+      background-image: linear-gradient(to right, #000 0%, #000 100%);
+      background-repeat: repeat-x;
+      background-position: 0 90%;
+      background-size: 100% 1px;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(100%) opacity(0.9);
+
+    &-wrapper {
+      height: 82px;
+      border: 1px solid #000;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 10px;
+    letter-spacing: 0.25em;
+    line-height: 1.65em;
+  }
+
+  &__link {
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    font-size: 11px;
+    margin-top: auto;
+  }
+
+  @media screen and (min-width: 680px) {
+    padding: 11px 8px 10px;
+    border-width: 2px;
 
     &__title {
-      position: relative;
-      width: 80%;
-      display: inline;
-      margin: 0 auto 10px;
-      letter-spacing: 0.25em;
-
-      font-size: 12px;
-      font-weight: 500;
-      text-align: center;
-
-      span {
-        background-image: linear-gradient(to right, #000 0%, #000 100%);
-        background-repeat: repeat-x; 
-        background-position: 0 90%; 
-        background-size: 100% 1px; 
-      }
+      width: 100%;
+      font-size: 14px;
     }
 
-    &__img {
-      height: 82px;
-      margin-bottom: 10px;
-      object-fit: cover;
-      border: 1px solid #000;
-    }
-
-    &__description {
-      margin-bottom: 10px;
-      letter-spacing: 0.25em;
-      line-height: 1.65em;
+    &__img-wrapper {
+      height: 90px;
     }
 
     &__link {
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      font-size: 11px;
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 11px 25px 19px;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      scale: 1.1;
     }
 
-    @media screen and (min-width: 680px) {
-      padding: 11px 8px 10px;
-      border-width: 2px;
-
-      &__title {
-        width: 100%;
-        font-size: 14px;
-      }
-
-      &__img {
-        height: 90px;
-      }
-
-      &__link {
-        font-size: 13px;
-      }
+    &__title {
+      font-size: 16px;
     }
-    
-      @media screen and (min-width: 1280px) {
-        padding: 11px 25px 19px;
-        transition: 0.3s;
-        &:hover {
-          cursor: pointer;
-          scale: 1.1;
-        }
 
-        &__title {
-          font-size: 16px;
-        }
+    &__img-wrapper {
+      height: 167px;
+    }
 
-        &__img {
-          height: 167px;
-        }
-
-        &__link {
-          font-size: 14px;
-        }
-      }
+    &__link {
+      font-size: 14px;
+    }
+  }
 }

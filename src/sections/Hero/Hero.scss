@@ -65,7 +65,7 @@
 
   @media screen and (min-width: 1280px) {
     height: 1024px;
-    padding-top: 180px;
+    padding-top: 10.5%;
     border-bottom: 7px solid #000;
     
     &__img {
@@ -84,5 +84,8 @@
       font-size: 70px;
       line-height: 1.32em;
     }
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 180px;
   }
 }
