@@ -1,3 +1,5 @@
+# О проекте
+
 Маленький лендинг созданный с помощью ['create-react-app'](https://create-react-app.dev/). В качестве админки используется [sanity.io](https://www.sanity.io/)
 
 ## Запуск проекта локально

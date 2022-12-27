@@ -6,14 +6,16 @@ const Card = ({data}) => {
   const {name, description, img, link} = data 
 
   return (
-    <div
+    <a
+      href={link}
       className={'card'}
+      target={'_blank'} rel="noreferrer"
     >
       <h3 className={'card__title'}><span>{name}</span></h3>
       <img className={'card__img'} src={urlFor(img)} alt="" />
       <p className={'card__description'}>{description}</p>
-      {/* <a className={'card__link'} href={link}>Перейти к статье</a> */}
-    </div>
+      <span className={'card__link'}>Перейти к статье ...</span>
+    </a>
   )
 }
 

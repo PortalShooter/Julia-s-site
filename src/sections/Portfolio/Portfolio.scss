@@ -64,11 +64,22 @@
 
   @media screen and (min-width: 1280px) {
 		&__title {
+			padding-left: 124px;
 			font-size: 64px;
+			margin-bottom: 40px;
 		}
 
 		&__cards {
+			padding-top: 100px;
+			padding-bottom: 100px;
 			grid-column-gap: 120px;
+			grid-template-columns: repeat(auto-fit, minmax(196px, 330px));
+
+			&::after,
+			&::before {
+				width: 750px;
+				height: 20px;
+			}
 		}
   }
 }

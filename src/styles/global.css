@@ -27,6 +27,11 @@ h1,h2,h3 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 p, ul {
   font-family: 'Roboto';
   margin: 0;
@@ -48,9 +53,13 @@ li {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   section {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  p, ul {
+    font-size: 14px;
   }
 }
